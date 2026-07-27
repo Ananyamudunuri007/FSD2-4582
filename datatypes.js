@@ -1,0 +1,13 @@
+"use strict";
+let studentAge = 19;
+let cgpa = 8.75;
+let studentName = "Ananya";
+let college = "SVECW";
+let isPresent = true;
+let hasCompletedAssignment = false;
+console.log("Student Name:", studentName);
+console.log("College:", college);
+console.log("Age:", studentAge);
+console.log("CGPA:", cgpa);
+console.log("Present:", isPresent);
+console.log("Assignment Completed:", hasCompletedAssignment);

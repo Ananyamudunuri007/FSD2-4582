@@ -1,0 +1,27 @@
+"use strict";
+class Student {
+    name;
+    rollNo;
+    branch;
+    constructor(name, rollNo, branch) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.branch = branch;
+    }
+    displayDetails() {
+        console.log("----- Student Details -----");
+        console.log("Name      :", this.name);
+        console.log("Roll No   :", this.rollNo);
+        console.log("Branch    :", this.branch);
+    }
+}
+class CollegeStudent extends Student {
+    showBranch() {
+        console.log("Branch:", this.branch); // Accessible because branch is protected
+    }
+}
+let student = new CollegeStudent("Ananya", 4582, "AI & DS");
+// Accessing public property
+console.log("Student Name:", student.name);
+student.displayDetails();
+student.showBranch();
